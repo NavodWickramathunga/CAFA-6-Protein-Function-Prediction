@@ -1,0 +1,26 @@
+paths:
+  data_root: "../cafa-6-protein-function-prediction"
+  raw: "../cafa-6-protein-function-prediction"
+  processed: "data/processed"
+  submissions: "submissions"
+  go_obo: "../cafa-6-protein-function-prediction/Train/go-basic.obo"
+  train_sequences: "../cafa-6-protein-function-prediction/Train/train_sequences.fasta"
+  train_terms: "../cafa-6-protein-function-prediction/Train/train_terms.tsv"
+  train_taxonomy: "../cafa-6-protein-function-prediction/Train/train_taxonomy.tsv"
+  ia_weights: "../cafa-6-protein-function-prediction/IA.tsv"
+  testsuperset_fasta: "../cafa-6-protein-function-prediction/Test/testsuperset.fasta"
+  testsuperset_taxa: "../cafa-6-protein-function-prediction/Test/testsuperset-taxon-list.tsv"
+
+model:
+  embedding: "esm2_t6_8M"  # placeholder
+  hidden_dim: 512
+  dropout: 0.2
+  lr: 1e-3
+  batch_size: 64
+  max_len: 2048
+
+train:
+  epochs: 5
+  seed: 42
+  num_workers: 4
+  grad_clip: 1.0
