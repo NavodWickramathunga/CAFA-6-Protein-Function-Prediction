@@ -24,3 +24,7 @@ seaborn>=0.13
 
 # Kaggle API
 kaggle>=1.6
+
+# App
+streamlit>=1.30
+joblib>=1.3

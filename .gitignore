@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Cache directories (large parquet files)
+05_model/cache/
+05_model/cache_k3/
+05_model/cache_k4/
+**/cache/
+**/cache_*/
+
+# Model artifacts (if large)
+05_model/artifacts/
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+
+# Data files (typically large and available elsewhere)
+data/Train/*.fasta
+data/Test/*.fasta
+*.fasta
+
+# Large submission files
+*.tsv.gz
+submission_ensemble.tsv
+05_model/submission*.tsv
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Logs
+*.log
+
+# Assignment PDF (copyrighted material)
+*.pdf
